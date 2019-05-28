@@ -2,13 +2,18 @@ import React, { Component } from 'react';
 
 
 class RollDice extends Component {
-  constructor() {
-    super();
-
+  constructor(props) {
+    super(props);
+    this.state = props;
   }
-
   render() {
-    return <i class="fas fa-dice-one"></i>
+    return (
+    <div>
+      
+      <i face='three'></i>
+      <button> Roll Dice </button>
+    </div>
+    );
   }
 }
 
